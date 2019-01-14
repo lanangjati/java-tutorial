@@ -10,5 +10,11 @@ public class Main {
 
         Flower rose = new Flower();
         rose.color = "RED";
+
+//        Blacksmith blacksmith = new Blacksmith(100, 60);
+//        System.out.println("Blacksmith tools is " + blacksmith.getTools());
+//        blacksmith.doingJob();
+//        blacksmith.createTools();
+//        blacksmith.temperingIron();
     }
 }
