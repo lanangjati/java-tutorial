@@ -7,6 +7,11 @@ public class Blacksmith extends Job{
 
     private int strength;
 
+    public Blacksmith(int strength) {
+        this(100, strength);
+        this.strength = strength;
+    }
+
     public Blacksmith(int salary, int strength) {
         super("Blacksmith", salary, "Hammer");
         this.strength = strength;
