@@ -1,0 +1,4 @@
+1.  create new method in Flower class to tell if the flower is beauty or not
+    the conditions for beautiful flower are:
+    - have "RED" color and petalAmount is not less than 5
+    - every flower that have thorn is beauty
