@@ -8,16 +8,13 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("In main method");
 
-        Flower rose = new Flower("YELLOW");
+        Flower rose = new Flower();
+        rose.color = "RED";
 
-        System.out.println(rose.getColor());
-        System.out.println(rose.getPetalAmount());
-
-        if (rose.isBeauty()){
-            System.out.println("Flower is beauty");
-        }else{
-            System.out.println("Flower is not beauty");
-        }
-
+//        Blacksmith blacksmith = new Blacksmith(100, 60);
+//        System.out.println("Blacksmith tools is " + blacksmith.getTools());
+//        blacksmith.doingJob();
+//        blacksmith.createTools();
+//        blacksmith.temperingIron();
     }
 }
