@@ -15,7 +15,7 @@ public class Flower {
     }
 
     public Flower(String color) {
-        this(color, 5l, true);
+        this(color, 2l, true);
         System.out.println("Constructor color");
     }
 
