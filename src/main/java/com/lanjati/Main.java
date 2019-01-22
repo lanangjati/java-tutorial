@@ -18,9 +18,18 @@ public class Main {
 //        blacksmith.doingJob();
 //        blacksmith.createTools();
 //        blacksmith.temperingIron();
-        Gardener gardener = new Gardener("string",100,"Hammer");
-        gardener.printFavFlower();
-        System.out.println(gardener.isFavFlowerBeauty());
+//        Gardener gardener = new Gardener("string",100,"Hammer");
+//        gardener.printFavFlower();
+//        System.out.println(gardener.isFavFlowerBeauty());
 
+
+        Armor armor = new Armor();
+        Helmet helmet = new Helmet("Yellow", 1, 1, 2);
+        armor.setHelmet(helmet);
+
+        System.out.println("Def from helmet " + armor.getHelmet().getDef());
+        System.out.println("Pants color : " + armor.getPants().getColor());
+
+        System.out.println("Body armor plate iron type: " + armor.getBodyArmor().getPlate().getTypeIron());
     }
 }
