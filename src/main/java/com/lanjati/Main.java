@@ -1,8 +1,15 @@
 package com.lanjati;
 
+import com.lanjati.Box.Box;
+import com.lanjati.Flowers.Flowers;
+import com.lanjati.Flowers.PinkRose;
+import com.lanjati.Product.Product;
+import com.lanjati.WrappingType.Wrapping;
 import com.lanjati.polymorfisma.Animal;
 import com.lanjati.polymorfisma.Cat;
 import com.lanjati.polymorfisma.Dog;
+
+import java.util.Scanner;
 
 /**
  * @author Lanang Jati
@@ -46,6 +53,22 @@ public class Main {
 //        Cat cat = new Cat();
 //        System.out.println("Cat rival: " + cat.getRival().makeSound());
 
+//        Flowers flowers = Flowers.getInstant("test");
+//        System.out.println(flowers.getName()+" and total price: $" + flowers.totalPrice(1));
+
+
+        Product product = Product.getInstant(Product.BOX);
+
+        product.addFlower(Flowers.RED_ROSE,7);
+        product.addFlower(Flowers.WHITE_LILY,2);
+        product.addFlower(Flowers.PINK_LILY,1);
+        //product.addFlower(Flowers.YELLOW_TULIP,1);
+        product.addCard(1);
+        product.addRibbon(1);
+        product.addBox(Box.CUTE_SQUARE_BOX);
+        product.addWrapper(Wrapping.GORGEOUS_WRAPPING, 1);
+
+        System.out.println("CUSTOMER BUY: " + product.getName() + " PRODUCT WITH TOTAL COST: $"+ product.getTotalPrice());
 
     }
 }
