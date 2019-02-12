@@ -3,6 +3,7 @@ package com.lanjati;
 import com.lanjati.Box.Box;
 import com.lanjati.Flowers.Flowers;
 import com.lanjati.Flowers.PinkRose;
+import com.lanjati.Interface.*;
 import com.lanjati.Product.Product;
 import com.lanjati.WrappingType.Wrapping;
 import com.lanjati.polymorfisma.Animal;
@@ -57,18 +58,51 @@ public class Main {
 //        System.out.println(flowers.getName()+" and total price: $" + flowers.totalPrice(1));
 
 
-        Product product = Product.getInstant(Product.BOX);
+//        Product product = Product.getInstant(Product.BOX);
+//
+//        product.addFlower(Flowers.RED_ROSE,7);
+//        product.addFlower(Flowers.WHITE_LILY,2);
+//        product.addFlower(Flowers.PINK_LILY,1);
+//        //product.addFlower(Flowers.YELLOW_TULIP,1);
+//        product.addCard(1);
+//        product.addRibbon(1);
+//        product.addBox(Box.CUTE_SQUARE_BOX);
+//        product.addWrapper(Wrapping.GORGEOUS_WRAPPING, 1);
+//
+//        System.out.println("CUSTOMER BUY: " + product.getName() + " PRODUCT WITH TOTAL COST: $"+ product.getTotalPrice());
 
-        product.addFlower(Flowers.RED_ROSE,7);
-        product.addFlower(Flowers.WHITE_LILY,2);
-        product.addFlower(Flowers.PINK_LILY,1);
-        //product.addFlower(Flowers.YELLOW_TULIP,1);
-        product.addCard(1);
-        product.addRibbon(1);
-        product.addBox(Box.CUTE_SQUARE_BOX);
-        product.addWrapper(Wrapping.GORGEOUS_WRAPPING, 1);
+//        TablePhone tablePhone = new TablePhone();
+//        tablePhone.makeCall("Supri");
+//        tablePhone.ring();
 
-        System.out.println("CUSTOMER BUY: " + product.getName() + " PRODUCT WITH TOTAL COST: $"+ product.getTotalPrice());
+//        MobilePhone mobilePhone = new MobilePhone();
+//        mobilePhone.makeCall("jaja");
+//        mobilePhone.ring();
+//        mobilePhone.sendMsg();
 
+//        callingSomeOne(tablePhone);
+//        callingSomeOne(mobilePhone);
+
+//        Telephone telephone = new TablePhone();
+
+        Player john = new Player("John", 30);
+        Monster vampire = new Monster("Vampire", 45);
+        Database database = new Database();
+
+        database.saveData(vampire);
+        System.out.println(vampire.toString());
+
+//        vampire.setWeapon("Axe");
+        vampire.setStr(90);
+        System.out.println(vampire.toString());
+
+        database.loadData(vampire);
+        System.out.println(vampire.toString());
+
+    }
+
+    public static void callingSomeOne(Telephone telephone) {
+        telephone.makeCall("Budi");
+        telephone.makeCall("Islan");
     }
 }
